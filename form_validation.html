@@ -1,0 +1,105 @@
+<html>
+<head>
+	<title>javascript quiz</title>
+	<style>
+		body{
+			width:50%;
+			margin:2em auto;
+			font-family: Verdana;
+			font-size:90%;
+		}
+		section{
+			margin:2em;
+			padding:1em;
+			background-color:#eee;
+
+		}
+	</style>
+</head>
+<body>
+	<section id="top">
+		<header><h1>Quiz in javascript</h1></header>
+		<footer>Current score:<span id="score"></span></footer>
+	</section>
+	<section  id="mid">
+		Ready to begin?
+	</section>
+	<section id="bot">
+		<button id="next">next</button>
+	</section>
+
+	<script>
+var questions=[],question=null,score=0,qcount=0;
+
+questions.push({question:"Where is Cibo Matto from?",choices:["Italy","Brazil","Japan","Senegal"],correctAnswer:2});
+questions.push({question:"Where is Björk from?",choices:['Ireland', 'Iceland', 'Sweden', 'Australia'],correctAnswer: 1});
+questions.push({question: 'Who was never a Beatle?',choices: ['Pete', 'Steve', 'Richard', 'George'],correctAnswer: 1});	
+questions.push({question: 'What year was a Rush album title?',choices: ['1984', '1979', '2001', '2112'],correctAnswer: 3});
+
+function showChoices(question){
+	var html='<h1>'+question.question+'</h1>';
+	html+='<form id="quiz">';
+	for(var i=0;i<question.choices.length;i++){
+		html+='<input type="radio" name="choice" id="choice'+i+'" value="'+i+'">';
+		html+='<label for="choice'+i+'">'+question.choices[i]+'</label>';
+		html+='<br>';
+	}
+	html+='<input type="submit" value="submit" name="submit" id="submit">';
+	html+='</form>';
+	document.getElementById("mid").innerHTML=html;
+}
+
+function showFinal(){
+	var html='<h2>Final Score:</h2>';
+	html+='<h3>'+score+' of '+qcount+' questions</h3>';
+	html+='<p><a href="quiz1.html">try again?</a></p>';
+	document.getElementById("mid").innerHTML=html;
+}
+
+function updateScore(){
+	document.getElementById("score").innerHTML=score;
+}
+
+function nextOrFinal(){
+	question=questions.shift();
+	if(question){
+		qcount+=1;
+		updateScore();
+		showChoices(question);
+	}else{
+		updateScore();
+		showFinal();
+	}
+
+}
+
+function scoreAnswer(event){
+	event.preventDefault();
+	function getAnswer(){
+		var choices=document.getElementsByName("choice");
+		for(var i=0;i<choices.length;i++){
+			var check = choices[i].checked;
+			if(check){
+				return choices[i].value;
+			}
+		}
+		if(!check){
+			alert("please check a radio");
+		}
+	}
+	if(question.correctAnswer == getAnswer()){
+		score+=1;
+		updateScore();
+		document.getElementById("mid").innerHTML='<h2>RIGHT!</h2>';
+	}else{
+		document.getElementById("mid").innerHTML='<h2>WRONG.It was '+question.choices[question.correctAnswer]+'</h2>';
+	}
+}
+
+document.getElementById("mid").addEventListener("submit",scoreAnswer,false);
+document.getElementById("next").addEventListener("click",nextOrFinal,false);
+
+</script>
+</body>
+</html>
+
