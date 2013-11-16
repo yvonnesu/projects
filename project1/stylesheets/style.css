@@ -1,0 +1,11 @@
+body{
+	font-family:Open Sans;
+	color:#666666;	
+}
+
+#header{
+	background-image: url("http://hosturl.co.uk/cc/cb.png") repeat-x;
+	width:1300px;
+	height:600px;
+}
+
