@@ -1,0 +1,85 @@
+    header{
+      background-image: url("img/headerbg.png");
+      height:800px;
+      position:relative;
+    }
+    #intro{
+      position:absolute;
+      left:410px;
+      top:180px;
+      color:#ffffff;
+      font-family: Open Sans, sans-serif;     
+    }
+    h1{
+      font-size: 72px;
+      margin-top:0px;
+      margin-bottom:-14px;
+    }
+    #intro p{
+      font-size:22px;
+      font-family: 'Montserrat', Courier New;
+    }
+    ul{
+      margin-top:45px;
+      list-style: none;
+    }
+    ul li{
+      display:inline-block;
+      margin:0px 40px 0px 0px;
+    }
+    #view-portfolio{
+      margin-left:-40px;
+    }
+    #intro ul li a{
+      text-decoration: none;
+      color:#ffffff;
+      font-weight:bold;
+    }
+    #intro ul li a:hover{
+      text-decoration: none;
+      color:#000000;
+      background-color: #ffffff;
+      border-radius: 5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+    }
+    footer{
+      height:400px;
+      margin-left:410px;
+    }
+    footer p{
+      margin-top: 57px;
+      color:#666666;
+      font-size:16px;
+      font-family:'Montserrat', Courier New;
+    }
+    footer ul{
+      height:120px;
+      margin-top:54px;
+    }
+    footer ul li{
+      margin:0px 16px 0px 0px;
+      width:120px;
+      height:120px;
+
+      background-color: #e5e5e5;
+    }
+    #mail{
+      margin-left:-41px;
+    }
+    #mail img{
+      margin-top: 48px;
+      margin-left: 35px;
+    }
+    #twitter img{
+      margin-top: 45px;
+      margin-left: 35px;
+    }
+    #f img{
+      margin-top: 36px;
+      margin-left: 36px;
+    }
+    #googleplus img{
+      margin-top: 37px;
+      margin-left: 36px;
+    }
