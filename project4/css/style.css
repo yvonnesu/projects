@@ -1,0 +1,52 @@
+			* {padding:0; margin:0;}
+
+			body {
+				background: #93D8FF;
+			}
+			section{
+				margin:100px auto;
+				font-family:sans-serif;
+				font-size:14px;
+				width: 1050px;
+				background-color: #172D2C;
+				color:#93D8FF;
+				font-family: Open Sans, sans-serif;
+				font-size:2em;
+				font-weight: bold;
+			}
+			p{
+				display:inline-block;
+			}
+			#tab1 p, #tab7 p{
+				margin: 100px 275px;
+			}
+			#tab2 p,#tab3 p,#tab4 p,#tab5 p, #tab6 p{
+				margin: 30px 275px;
+			}
+
+			div {
+				width: 1050px;
+				height: 280px;
+			}
+
+			.tabs li {
+				list-style:none;
+				display:inline;
+			}
+
+			.tabs a {
+				padding:5px 10px;
+				display:inline-block;
+				width:130px;
+				height:35px;
+				float: left;
+     			background-color: #5E8AA1;     
+     			color: #93D8FF;
+     			text-decoration: none;
+     			text-align: center;
+			}
+
+			.tabs a.active {
+				background: #172D2C;
+
+			}
