@@ -1,0 +1,57 @@
+body{
+	background-color: #93D8FF;
+}
+section{
+	display: relative;
+	margin:100px auto;
+	border:1px solid #000;
+	width: 1050px;
+	background-color: #172D2C;
+	color:#93D8FF;
+	font-family: Open Sans, sans-serif;
+	font-size:2em;
+	font-weight: bold;
+}
+div{
+
+	height: 240px;
+}
+#tab2 p, #tab3 p, #tab5 p,#tab6 p{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#tab1 p, #tab4 p, #tab7 p{
+	text-align: center;
+	line-height: 240px;
+	vertical-align: middle;
+}
+ul{
+    list-style: none;
+    width: 1050px;
+    margin-left: -41px;
+    margin-top: -36px;
+}
+li{
+
+	display:inline-block;
+	width:150px;
+	height:35px;
+	float:left;
+	background-color: #5E8AA1;
+
+	line-height: 35px;
+	text-align: center;
+
+}
+a{
+	width: 150px;
+	height: 35px;
+	float: left;
+	color: #93D8FF;
+	text-decoration: none;
+}
+a:hover, a:active{
+	background-color: #172D2C;
+}
+
