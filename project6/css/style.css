@@ -1,0 +1,29 @@
+*{
+	background-color: #B6D8D5;
+	margin: 0;
+	padding: 0;
+}
+
+canvas{
+	background: -moz-linear-gradient(top, #378BD1 0%, #d6f0fd 100%); /* ff */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,##378BD1), color-stop(100%,#d6f0fd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #378BD1 0%, #d6f0fd 100%);/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #378BD1 0%, #d6f0fd 100%); /* opera */
+	background: -ms-linear-gradient(top, #378BD1 0%, #d6f0fd 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #378BD1 0%, #d6f0fd 100%); /* the standard */ 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#378BD1', endColorstr='#d6f0fd',GradientType=0 ); /* IE6-9 */
+}
+#buttons{
+	text-align: center;
+}
+button{
+	width: 150px;
+	height: 40px;
+	border: none;
+	background-color: #C45238;
+	font-family:  Open Sans, sans-serif;
+	font-size: 16px;
+
+}
+
+
